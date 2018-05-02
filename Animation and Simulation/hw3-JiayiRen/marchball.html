@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+
+  <meta author="Jiayi" content="Blobby Outlines Demo">
+ 
+  <style type="text/css">
+  	body,html{
+  		margin:0;
+  		padding:0;
+  	}
+  	h1,h2{
+  		text-align: center;
+  	}
+  </style>
+
+  <script type="text/javascript">
+    var canvas;
+    var can;
+    var circles = [];
+
+    var PX_SIZE = 5;
+    var NUM_CIRCLES = 10;
+
+    var draw = function(circle){
+        can.strokeStyle = "red";
+        can.beginPath();
+        can.arc(circle.x,circle.y,circle.r, 2*Math.PI,false);
+        can.stroke();
+    }
+    var drawLine = function(sx,sy,ex,ey){
+      can.strokeStyle = "red";
+      can.beginPath();
+      can.moveTo(sx,sy);
+      can.lineTo(ex,ey);
+      can.stroke();
+    }
+    //west
+    var lamda_w =function(sign,x,y){
+        return PX_SIZE * ((1- sign[x][y])/(sign[x][y+PX_SIZE]-sign[x][y]));
+    }
+    //east
+    var lamda_e =function(sign,x,y){
+        return PX_SIZE * ((1 - sign[x+PX_SIZE][y])/(sign[x+PX_SIZE][y+PX_SIZE] - sign[x+PX_SIZE][y]));
+    }
+    //north
+    var lamda_n =function(sign,x,y){
+        return PX_SIZE * ((1- sign[x][y])/(sign[x+PX_SIZE][y]-sign[x][y]));
+    }
+    //south
+    var lamda_s =function(sign,x,y){
+        return PX_SIZE * ((1- sign[x][y+PX_SIZE])/(sign[x+PX_SIZE][y+PX_SIZE]-sign[x][y+PX_SIZE]));
+    }
+    
+    
+    var init = function(){
+
+      canvas = document.getElementById("canvas");
+      can = canvas.getContext("2d"),
+      
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      for(var i = 0; i< NUM_CIRCLES; i++){
+        circles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                r: Math.random() * 30 + 50,
+                vx: Math.random() * 50 - 25,
+                vy: Math.random() * 50 - 25,
+                left: 0,
+                right: 0,
+                up: 0,
+                down: 0
+            });
+        circles[i].left = circles[i].x - circles[i].r;
+        circles[i].right = circles[i].x + circles[i].r;
+        circles[i].up= circles[i].y - circles[i].r;
+        circles[i].down = circles[i].y + circles[i].r;
+      }
+
+      setInterval(update,25);
+
+    }
+
+    var update = function(){
+      can.fillStyle = "rgba(245,212,217,1)";
+      can.fillRect(0,0,canvas.width,canvas.height);
+      
+      //basic circles move
+      for(var i = 0; i< NUM_CIRCLES; i++){
+        var c = circles[i];
+
+        c.x += c.vx;
+        c.y += c.vy;
+        
+        if (c.x - c.r < 0) {
+            c.vx = +Math.abs(c.vx);
+        }
+        if (c.x + c.r > canvas.width) {
+            c.vx = -Math.abs(c.vx);
+        }
+        if (c.y - c.r < 0) {
+            c.vy = +Math.abs(c.vy);
+        }
+        if (c.y + c.r > canvas.height) {
+            c.vy = -Math.abs(c.vy);
+        }
+        //basic movable circles
+        //draw(c);
+      }
+
+      // store F(x,y) ---- sign
+      // store cell value ---- grid:[0-15]
+      var sign = new Array(canvas.width);
+      var grid = new Array(canvas.width);
+      for(var i = 0; i< grid.length; i++){
+        sign[i] = new Array(canvas.height);
+        grid[i] = new Array(canvas.height);
+      }
+      // sign: F(x,y)
+      for (var x = 0; x < canvas.width; x += PX_SIZE) {
+          for (var y = 0; y < canvas.height; y += PX_SIZE) {
+              var sum = 0;
+              for (var i = 0; i < circles.length; i++) {
+                  var c = circles[i];
+                  var dx = x - c.x;
+                  var dy = y - c.y;
+                  var d2 = dx * dx + dy * dy;
+                  sum += c.r * c.r / d2;
+              }
+              sign[x][y] = sum;
+              // if (sum > SUM_THRESHOLD) {
+              //     can.fillStyle = "red";
+              //     can.fillRect(x, y, PX_SIZE, PX_SIZE);
+              //     can.fill();
+              // }
+          }
+      }
+      // grid: cell value 1-15
+      for (var x = 0; x < canvas.width-PX_SIZE; x += PX_SIZE) {
+          for (var y = 0; y < canvas.height-PX_SIZE; y += PX_SIZE) {
+            grid[x][y] = 0;
+            grid[x][y] += 8 * ( sign[x][y] >= 1 ? 1: 0)
+                       +      ( sign[x][y+PX_SIZE] >= 1 ? 1 : 0)
+                       +  4 * ( sign[x + PX_SIZE][y] >= 1 ? 1 : 0)
+                       +  2 * ( sign[x + PX_SIZE][y+PX_SIZE] >= 1 ? 1 : 0);
+          }
+      }
+      // lamda, and drawLine based on cell value
+      for (var x = 0; x < canvas.width-1; x += PX_SIZE) {
+          for (var y = 0; y < canvas.height-1; y += PX_SIZE) {  
+
+                var num = grid[x][y];
+                //sw
+                if(num == 1 || num == 14 || num == 10){
+                  var yw  = y + lamda_w(sign,x,y);
+                  var xs  = x + lamda_s(sign,x,y);
+                  //console.log(yw+",xs"+xs);
+                  drawLine(x,yw,xs,y+PX_SIZE);
+                }
+                //es
+                if(num == 2 || num == 13 || num == 5){
+                  var ye = y + lamda_e(sign,x,y);
+                  var xs = x + lamda_s(sign,x,y);
+                  drawLine(xs,y+PX_SIZE,x+PX_SIZE,ye);
+                }
+                //we
+                if( num == 3 || num == 12){
+                  var yw = y + lamda_w(sign,x,y);
+                  var ye = y + lamda_e(sign,x,y);
+                  drawLine(x,yw,x+PX_SIZE,ye);
+                }
+                //ne
+                if( num == 4 || num == 11 ||num == 10){
+                  var xn = x + lamda_n(sign,x,y);
+                  var ye = y + lamda_e(sign,x,y);
+                  drawLine(xn,y,x+PX_SIZE,ye);
+                }
+                //nw
+                if(num == 5 || num == 7 || num == 8){
+                  var xn = x + lamda_n(sign,x,y);
+                  var yw = y + lamda_w(sign,x,y);
+                  drawLine(x,yw,xn,y);
+                }
+                //ns
+                if(num == 6 || num == 9 ){
+                  var xn = x + lamda_n(sign,x,y);
+                  var xs = x + lamda_s(sign,x,y);
+                  drawLine(xn,y,xs,y+PX_SIZE);
+                }
+          }
+      }
+
+    }
+
+
+  </script>
+  </head>
+<body onload="init();">
+  <canvas id = "canvas">
+    Canvas not supported
+  </canvas>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Jacobian IK</title>
+		<style type="text/css">
+		  	body,html{
+		  		margin:0;
+		  		padding:0;
+		  	}
+		  	h1,h2{
+		  		text-align: center;
+		  	}
+  </style>
+		<script src="js/m4th.min.js"></script>
+		<script type="text/javascript">
+			var curAngle = [0,0,1];
+			var canvas;
+			var c;
+			var mouse;
+			mouse = {x: 0 ,y: 0};
+			l1 = Math.random()*100;
+			l2 = Math.random()*100;
+			l3 = Math.random()*100;
+			len = [l1,l2,l3];
+			
+			var init = function(){
+
+				canvas = document.getElementById("canvas");
+  				c = canvas.getContext("2d"),
+  				
+  				canvas.width = window.innerWidth;
+  				canvas.height = window.innerHeight;
+
+
+  				canvas.addEventListener('mousemove', function(e){ 
+				    mouse.x = e.clientX - canvas.width/2;//
+				    mouse.y = -1 * (e.clientY - canvas.height/2);//
+				}, false);
+				
+  				setInterval(update,25);
+
+  				c.scale(1,-1);
+  				c.translate(canvas.width/2, -canvas.height/2);
+				}
+
+				var draw = function(can, sX,sY,eX,eY){
+					can.beginPath();
+					can.moveTo(sX, sY);
+					can.lineTo(eX, eY);
+					can.stroke();
+				};
+
+				var clearC = function(can){
+					can.save();
+					can.setTransform(1,0,0,1,0,0);
+					can.clearRect(0,0,canvas.width,canvas.height);
+					can.restore();
+				};
+
+				var update = function(){
+
+					var matrix = m4th.matrix;
+					//mouseover/click point
+					var p = matrix(2,[
+						mouse.x,
+						mouse.y,
+						]);
+					console.log("p:"+ p);
+
+					//joint length
+
+					// len = [70,150,70];
+					//current state with angle
+					Ang = matrix(3,[
+							curAngle[0],
+							curAngle[1],
+							curAngle[2]
+					]);
+					
+					Fx = 0;
+					Fy = 0;
+					
+					for(var i = 0 ;i < Ang.rows;i++){
+
+						sumAng = 0;
+						for(var j = 0 ;j< i+1 ;j++){
+							sumAng += Ang.get(j,0);
+						}
+						Fx += len[i] * Math.cos(sumAng);
+						Fy += len[i] * Math.sin(sumAng);
+						//console.log("angSum:"+ sumAng);
+					}
+					//console.log("FXFY:" + Fx +" "+ Fy);
+					curP = matrix(2,[
+							Fx,
+							Fy
+						]);
+					clearC(c);
+
+					//draw field
+					c.strokeStyle = "red";
+					c.fillStyle = "pink";
+					c.beginPath();
+					c.fillRect( -canvas.width/4, -canvas.height/2, canvas.width/2, canvas.height);
+					c.fill();
+					c.arc(0, 0,len[0]+len[1]+len[2], 2*Math.PI, false);
+					c.stroke();
+
+					//difX
+					difX = [0,0,0];
+					difY = [0,0,0];
+					for(var i = 0; i< 3 ;i++){
+						tempX = 0;
+						tempY = 0;
+						for( var j = i; j< 3; j++){
+							ang_val = 0;
+							for(var k = 0; k< j+1; k++){
+								ang_val += Ang.get(k,0);
+							}
+							tempX += len[j] * Math.sin(ang_val);
+							tempY += len[j] * Math.cos(ang_val);
+						}
+						difX[i] += -1*(tempX);
+						difY[i] += tempY;
+					}
+					// difX1 = -len[0] * Math.sin(Ang.get(0,0)) 
+					// 	    -len[1] * Math.sin(Ang.get(0,0) + Ang.get(1,0))
+					// 	    -len[2] * Math.sin(Ang.get(0,0) + Ang.get(1,0) +Ang.get(2,0))
+					// difY1 = len[0] * Math.cos(Ang.get(0,0))
+					//        +len[1] * Math.cos(Ang.get(0,0) + Ang.get(1,0))
+					//        +len[2] * Math.cos(Ang.get(0,0) + Ang.get(1,0) + Ang.get(2,0))
+					       
+					// difX2 = -len[1] * Math.sin(Ang.get(0,0) + Ang.get(1,0))
+					//         -len[2] * Math.sin(Ang.get(0,0) + Ang.get(1,0)
+					//         	 + Ang.get(2,0))
+					// difY2 = len[1] * Math.cos(Ang.get(0,0) + Ang.get(1,0))
+					// 	   +len[2] * Math.cos(Ang.get(0,0) + Ang.get(1,0) 
+					// 	   		+ Ang.get(2,0)) 
+
+					// difX3 = -len[2] * Math.sin(Ang.get(0,0) + Ang.get(1,0) + Ang.get(2,0))  
+					// difY3 = len[2] * Math.cos(Ang. get(0,0) + Ang.get(1,0) + Ang.get(2,0)) 
+
+					Jacob = matrix(2,[
+						difX[0], difX[1], difX[2],
+						difY[0], difY[1], difY[2]
+						]);
+					
+					if(Jacob.columns > Jacob.rows)
+						invJ = Jacob.transp().mult(m4th.lu(
+							Jacob.mult(Jacob.transp())).getInverse());
+					else if(Jacob.columns < Jacob.rows)
+						invJ = m4th.lu(Jacob.transp().mult(Jacob)).
+						getInverse().mult(Jacob.transp());
+					else
+						invJ = m4th.lu(Jacob).getInverse();
+					
+
+					difP = p.minus(curP);
+					difAng = invJ.mult(difP);
+					Ang = Ang.add(difAng.times(.1));
+					for(var i = 0; i< Ang.rows; i++){
+						curAngle[i] = Ang.get(i,0);
+					}
+
+					c.beginPath();
+					c.arc( p.get(0,0),
+						   p.get(1,0),
+						  5,
+						  2*Math.PI,false);
+					c.fillStyle = "green";
+					c.fill();
+
+					c.strokeStyle = "blue";
+					//first line
+					draw(c, 0, 0,
+						len[0]*Math.cos(curAngle[0]),
+						len[0]*Math.sin(curAngle[0]));
+					c.save();
+					c.translate(len[0]*Math.cos(curAngle[0]),
+								len[0]*Math.sin(curAngle[0]));
+					c.rotate(curAngle[0]);
+					//second line
+					draw(c, 0,0,
+						len[1]*Math.cos(curAngle[1]),
+						len[1]*Math.sin(curAngle[1]));
+					c.translate(len[1]*Math.cos(curAngle[1]),
+								len[1]*Math.sin(curAngle[1]));
+					c.rotate(curAngle[1]);
+					//third line
+					draw(c,0 ,0,
+						len[2]*Math.cos(curAngle[2]),
+						len[2]*Math.sin(curAngle[2]));
+
+					c.restore();
+
+
+			};
+			
+		</script>
+	</head>
+	<body onload="init();">
+		<canvas id="canvas">
+			Canvas not supported
+		</canvas>
+	</body>
+</html>
