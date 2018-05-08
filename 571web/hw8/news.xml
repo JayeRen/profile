@@ -1,0 +1,507 @@
+<?xml version="1.0"?>
+<rss xmlns:sa="https://seekingalpha.com/api/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Apple Inc. - News and Analysis on Seeking Alpha</title>
+    <link>https://seekingalpha.com</link>
+    <description>&#xA9; seekingalpha.com. Use of this feed is limited to personal, non-commercial use and is governed by Seeking Alpha's Terms of Use (https://seekingalpha.com/page/terms-of-use). Publishing this feed for public or commercial use and/or misrepresentation by a third party is prohibited.</description>
+    <item>
+      <title>Is It Too Late To Buy Apple Stock?</title>
+      <link>https://seekingalpha.com/article/4124466-late-buy-apple-stock?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4124466</guid>
+      <pubDate>Mon, 13 Nov 2017 19:37:56 -0500</pubDate>
+      <sa:author_name>Andres Cardenal, CFA</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>KGI analyst expects three iPhones next year, two with OLED</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3311588</guid>
+      <pubDate>Mon, 13 Nov 2017 15:59:42 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>HomePod manufacturer says facial recognition will come to speakers</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3311507</guid>
+      <pubDate>Mon, 13 Nov 2017 11:14:56 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple acknowledges iPhone X issue in some devices, plans fix</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3311175</guid>
+      <pubDate>Fri, 10 Nov 2017 12:04:42 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple 10-K Confirms The New Super Cycle</title>
+      <link>https://seekingalpha.com/article/4122846-apple-10-k-confirms-new-super-cycle?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122846</guid>
+      <pubDate>Thu, 09 Nov 2017 12:49:31 -0500</pubDate>
+      <sa:author_name>Praveen Bhatia</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple: The 2018 iPhone Problem?</title>
+      <link>https://seekingalpha.com/article/4122835-apple-2018-iphone-problem?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122835</guid>
+      <pubDate>Thu, 09 Nov 2017 12:22:55 -0500</pubDate>
+      <sa:author_name>Bill Maurer</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>INTC</sa:symbol>
+        <sa:company_name>Intel Corporation</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>QCOM</sa:symbol>
+        <sa:company_name>Qualcomm Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple acquires image sensor start-up</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3310657</guid>
+      <pubDate>Thu, 09 Nov 2017 11:30:16 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Importance Of Bloomberg's Article On Apple's AI Headset Project</title>
+      <link>https://seekingalpha.com/article/4122776-importance-bloombergs-article-apples-ai-headset-project?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122776</guid>
+      <pubDate>Thu, 09 Nov 2017 10:00:49 -0500</pubDate>
+      <sa:author_name>DoctoRx</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>GOOG</sa:symbol>
+        <sa:company_name>Alphabet Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>GOOGL</sa:symbol>
+        <sa:company_name>Alphabet Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Canalys data, assembler report hint at weaker iPhone 8 sales</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3310555</guid>
+      <pubDate>Thu, 09 Nov 2017 08:46:50 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple's first scripted TV show</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3310291</guid>
+      <pubDate>Thu, 09 Nov 2017 03:33:03 -0500</pubDate>
+      <sa:author_name>Yoel Minkoff</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>NFLX</sa:symbol>
+        <sa:company_name>Netflix, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>CBS</sa:symbol>
+        <sa:company_name>CBS Corporation</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Judge allows Apple, Qualcomm revisions in patent case; Apple buys TV show</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3309948</guid>
+      <pubDate>Wed, 08 Nov 2017 15:29:05 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>QCOM</sa:symbol>
+        <sa:company_name>Qualcomm Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Bloomberg: Apple could launch iPad with Face ID next year</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3309925</guid>
+      <pubDate>Wed, 08 Nov 2017 14:25:35 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple: Has iPhone X Silenced The Critics?</title>
+      <link>https://seekingalpha.com/article/4122280-apple-iphone-x-silenced-critics?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122280</guid>
+      <pubDate>Wed, 08 Nov 2017 12:17:43 -0500</pubDate>
+      <sa:author_name>Mark Hibben</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>SSNLF</sa:symbol>
+        <sa:company_name>Samsung Electronics Co., Ltd.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple Blows Out Earnings, But Should You Wait To Buy?</title>
+      <link>https://seekingalpha.com/article/4122226-apple-blows-earnings-wait-buy?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122226</guid>
+      <pubDate>Wed, 08 Nov 2017 11:11:46 -0500</pubDate>
+      <sa:author_name>Orange Peel Investments</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>QCOM</sa:symbol>
+        <sa:company_name>Qualcomm Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AVGO</sa:symbol>
+        <sa:company_name>Broadcom Limited</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple Positions Itself For More Services Growth</title>
+      <link>https://seekingalpha.com/article/4122224-apple-positions-services-growth?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4122224</guid>
+      <pubDate>Wed, 08 Nov 2017 10:27:03 -0500</pubDate>
+      <sa:author_name>David Pinsen</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Bloomberg: Apple planning AR headset for 2020</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3309841</guid>
+      <pubDate>Wed, 08 Nov 2017 09:49:37 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Strategy Analytics says Apple topped Q3 market; start-up sues Apple for patent</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3309263</guid>
+      <pubDate>Tue, 07 Nov 2017 16:01:58 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Why Apple's Decision To Go Conservative With Video Streaming Is The Right One</title>
+      <link>https://seekingalpha.com/article/4121795-apples-decision-go-conservative-video-streaming-right-one?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4121795</guid>
+      <pubDate>Tue, 07 Nov 2017 14:14:28 -0500</pubDate>
+      <sa:author_name>Gary Bourgeault</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AMZN</sa:symbol>
+        <sa:company_name>Amazon.com, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>NFLX</sa:symbol>
+        <sa:company_name>Netflix, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Now Apple Must Show What's Next After iPhone X</title>
+      <link>https://seekingalpha.com/article/4121498-now-apple-must-show-next-iphone-x?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4121498</guid>
+      <pubDate>Tue, 07 Nov 2017 04:51:49 -0500</pubDate>
+      <sa:author_name>Vitaliy Katsenelson, CFA</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>CreditSights: Apple bond offering could total $7B</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3308641</guid>
+      <pubDate>Mon, 06 Nov 2017 15:55:22 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>IDC: Top smartphone makers gained China market share in Q3</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3308617</guid>
+      <pubDate>Mon, 06 Nov 2017 14:21:15 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>XI</sa:symbol>
+        <sa:company_name>Xiaomi</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>34% iPhone Growth Is The Goal For Apple</title>
+      <link>https://seekingalpha.com/article/4121177-34-percent-iphone-growth-goal-apple?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4121177</guid>
+      <pubDate>Mon, 06 Nov 2017 13:11:35 -0500</pubDate>
+      <sa:author_name>Pranav Singh</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>KGI analyst expects two OLED iPhones; Apple offering fixed-rate bonds</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3308569</guid>
+      <pubDate>Mon, 06 Nov 2017 11:40:56 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Supreme Court declines to hear Samsung appeal on Apple damages</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3308553</guid>
+      <pubDate>Mon, 06 Nov 2017 10:56:48 -0500</pubDate>
+      <sa:author_name>Brandy Betz</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>SSNNF</sa:symbol>
+        <sa:company_name>Samsung Electronics Co., Ltd.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>SSNLF</sa:symbol>
+        <sa:company_name>Samsung Electronics Co., Ltd.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple Revenue Math: Oh My</title>
+      <link>https://seekingalpha.com/article/4121073-apple-revenue-math-oh?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4121073</guid>
+      <pubDate>Mon, 06 Nov 2017 09:22:54 -0500</pubDate>
+      <sa:author_name>Elazar Advisors, LLC</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Is Apple's Long Forgotten Catalyst Coming Back?</title>
+      <link>https://seekingalpha.com/article/4120698-apples-long-forgotten-catalyst-coming-back?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4120698</guid>
+      <pubDate>Mon, 06 Nov 2017 03:00:00 -0500</pubDate>
+      <sa:author_name>D.M. Martins Research</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>iPhone X Supply Concerns Assuaged By Top And Bottom Line Performance Exceeding Expectations</title>
+      <link>https://seekingalpha.com/article/4120934-iphone-x-supply-concerns-assuaged-top-bottom-line-performance-exceeding-expectations?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4120934</guid>
+      <pubDate>Sun, 05 Nov 2017 22:53:33 -0500</pubDate>
+      <sa:author_name>Jeremy McKinzie</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple's Irish data center in doubt</title>
+      <link>https://seekingalpha.com/symbol/AAPL/news?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/MarketCurrent:3308346</guid>
+      <pubDate>Sat, 04 Nov 2017 18:23:09 -0400</pubDate>
+      <sa:author_name>Yoel Minkoff</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>IRL</sa:symbol>
+        <sa:company_name>New Ireland Fund</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>EIRL</sa:symbol>
+        <sa:company_name>iShares MSCI Ireland Capped ETF</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Here's Why Apple Is Poised To Outperform</title>
+      <link>https://seekingalpha.com/article/4120215-apple-poised-outperform?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4120215</guid>
+      <pubDate>Fri, 03 Nov 2017 14:22:26 -0400</pubDate>
+      <sa:author_name>Alpha Stock Advisor</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>PYPL</sa:symbol>
+        <sa:company_name>PayPal Holdings, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>IBM</sa:symbol>
+        <sa:company_name>International Business Machines Corporation</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>GOOG</sa:symbol>
+        <sa:company_name>Alphabet Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>GOOGL</sa:symbol>
+        <sa:company_name>Alphabet Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>MSFT</sa:symbol>
+        <sa:company_name>Microsoft Corporation</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>SNE</sa:symbol>
+        <sa:company_name>Sony Corporation</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>DVMT</sa:symbol>
+        <sa:company_name>Dell Technologies Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>SSNLF</sa:symbol>
+        <sa:company_name>Samsung Electronics Co., Ltd.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>NFLX</sa:symbol>
+        <sa:company_name>Netflix, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AMZN</sa:symbol>
+        <sa:company_name>Amazon.com, Inc.</sa:company_name>
+      </sa:stock>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+    <item>
+      <title>Apple First Look: Glad To Be Proven (Very) Wrong</title>
+      <link>https://seekingalpha.com/article/4120085-apple-first-look-glad-proven-wrong?source=feed_symbol_AAPL</link>
+      <guid isPermaLink="false">https://seekingalpha.com/Article:4120085</guid>
+      <pubDate>Fri, 03 Nov 2017 10:40:15 -0400</pubDate>
+      <sa:author_name>D.M. Martins Research</sa:author_name>
+      <media:thumbnail url=""/>
+      <sa:picture/>
+      <sa:stock>
+        <sa:symbol>AAPL</sa:symbol>
+        <sa:company_name>Apple Inc.</sa:company_name>
+      </sa:stock>
+    </item>
+  </channel>
+</rss>
+

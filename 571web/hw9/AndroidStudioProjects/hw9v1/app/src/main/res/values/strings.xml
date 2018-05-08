@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">hw9v1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_stock">show_stock</string>
+    <string name="tab_text_1">CURRENT</string>
+    <string name="tab_text_2">HISTORICAL</string>
+    <string name="tab_text_3">NEWS</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="stock_symbol">%s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="menu_title">Remove from Favorites?</string>
+    <string name="facebook_app_id">286774908511231</string>
+    <string name="fb_login_protocol_scheme">fb286774908511231</string>
+    <string name="title_activity_facebook">Facebook</string>
+
+</resources>

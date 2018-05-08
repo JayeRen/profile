@@ -1,0 +1,34 @@
+﻿  Application3.cpp
+Application3.cpp(76): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+Application3.cpp(76): warning C4305: 'initializing': truncation from 'double' to 'float'
+Application3.cpp(84): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+Application3.cpp(84): warning C4305: 'initializing': truncation from 'double' to 'float'
+Application3.cpp(93): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(94): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(95): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(97): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(98): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(101): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(105): warning C4305: '=': truncation from 'double' to 'float'
+Application3.cpp(44): warning C4101: 'xRes': unreferenced local variable
+Application3.cpp(43): warning C4101: 'j': unreferenced local variable
+Application3.cpp(43): warning C4101: 'i': unreferenced local variable
+Application3.cpp(44): warning C4101: 'yRes': unreferenced local variable
+Application3.cpp(150): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+Application3.cpp(157): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+Application3.cpp(171): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+Application3.cpp(172): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+Application3.cpp(178): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+Application3.cpp(184): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(1193): note: see declaration of 'fscanf'
+Application3.cpp(137): warning C4101: 'xRes': unreferenced local variable
+Application3.cpp(125): warning C4101: 'camera': unreferenced local variable
+Application3.cpp(136): warning C4101: 'j': unreferenced local variable
+Application3.cpp(137): warning C4101: 'yRes': unreferenced local variable
+  CS580HW3.vcxproj -> C:\Users\qyf\Desktop\jiayiren\hw3\JIAYI_REN_HW3-newest\JIAYI_REN_HW3\HW3\.\Debug\CS580HW3.exe
+  CS580HW3.vcxproj -> .\Debug\CS580HW3.pdb (Full PDB)

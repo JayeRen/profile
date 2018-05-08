@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+body {text-align: center;
+    padding-top: 150px;}
+
+</style>
+    <script language= "JavaScript">
+        function searchXML(surl){
+            var URL =surl.HURL.value;  
+            if(URL==''||URL.indexOf(' ')!=-1){
+                window.alert('Blank text/Blank space before text!');
+            }
+            else{
+                function loadXML(url){
+                    if(window.XMLHttpRequest){
+                        xmlhttp = new XMLHttpRequest();
+                    }
+                    else{
+                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                        if(xmlhttp.FileExists(url)){
+                        }
+                        else{
+                            window.alert("file doesn't exist.");
+                        }
+                    }
+                    xmlhttp.open("GET",url,false);
+                    xmlhttp.send();
+                    if(xmlhttp.readyState==4){  
+                             
+                           if(xmlhttp.status==404){ 
+                               de = "file doesn't exist.";
+                               return de;
+                                                  }//url不存在   
+                            else if(xmlhttp.status==200){  
+                                
+                                jsonObj = JSON.parse(xmlhttp.responseText);
+                                return jsonObj;  
+                            }
+                    
+                    }
+                  
+                }
+                try{
+                    jsonObj = loadXML(URL);
+                    if(window.ActiveXObject){
+                        if(jsonObj.parseError.errorCode != 0){
+                            var myErr = jsonObj.parseError;
+                            generateError(jsonObj);
+                            hWin = window.open("","Error","height=300,width = 340");
+                            hWin.document.write(html_text);
+                        }
+                        else{
+                            if(generateHTML(jsonObj)==0){
+                                
+                            }
+                            else{
+                                generateHTML(jsonObj);
+                                hWin = window.open("","hw4","height=800,width=600");
+                                hWin.document.write(html_text);
+                                }
+                        }
+                    }
+                    else{
+                        if(generateHTML(jsonObj)==0){}
+                        else{
+                            jsonObj.onload = generateHTML(jsonObj); hWin=window.open("","hw4","height=800,width=600");
+                        hWin.document.write(html_text);
+                        }
+                        
+                    }
+                    hWin.document.close();
+                }catch(err){
+                window.alert("file(s) loading error:\n\n"+err);
+            }
+            }
+        }
+        function generateHTML(jsonObj){
+            
+            root = jsonObj.documentElement;
+            //whether has content
+            if(Object.values(jsonObj.Mainline.Table).length==1){ 
+                window.alert("No companies available!");
+                return 0;
+            }
+            else{
+                html_text = "<html><head><title>JSON Parse Result</title></head><body>";
+                html_text+="<table border='2' align='center'>";
+                planeNodeList = jsonObj.Mainline.Table.Header.Data;
+                html_text+="<tbody>";
+                //header line
+                html_text+="<tr>";
+                x=0;y=0;
+                //header
+                var header_vals = Object.values(planeNodeList);
+                for(i=0;i<header_vals.length;i++){
+                        html_text+="<th>"+header_vals[i]+"</th>";
+                }
+                html_text+="</tr>";
+
+                var planes = jsonObj.Mainline.Table.Row;
+                for(i=0;i<planes.length;i++){
+                    planeNodeList=planes[i];
+                    html_text+="<tr>";
+                    var plane_keys = Object.keys(planeNodeList);
+                    var plane_vals = Object.values(planeNodeList);
+                    for(j=0;j<plane_keys.length;j++){
+                        if(plane_keys[j]==header_vals[j]&&(j==0||j==1)){
+                           html_text+="<td>"+plane_vals[j]+"</td>";
+                           }
+                        else if(plane_keys[j]==header_vals[j] && j==2){
+                            var hub_keys=Object.values(plane_vals[j].Hub);
+                            html_text+="<td width=15%><ul>";
+                            if(hub_keys==null){
+                                html_text+="<li></li>";
+                            }
+                            else{
+                                for(k=0;k<hub_keys.length;k++){
+                                    if(k==0){
+                                        html_text+="<li><b>"+hub_keys[k]+"</b></li>";
+                                    }
+                                    else{
+                                    html_text+="<li>"+hub_keys[k]+"</li>";
+                                    }
+                                }
+                            }  
+                            html_text+="</ul></td>";
+                            }
+                        else if(plane_keys[j]==header_vals[j] && j==3){
+                            html_text+="<td width=25%>"+plane_vals[j]+"</td>";
+                            }
+                        else if(plane_keys[j]==header_vals[j] && j==4){
+                            html_text+="<td width=15%><a href='"+plane_vals[j]+"'>"+plane_vals[j]+"</td>";
+                        }
+                        else if(plane_keys[j]==header_vals[j] && j==5){
+                            html_text+="<td width=30%><img src='"+plane_vals[j]+"' height=150px width=100%></td>";
+                        }
+                        else{
+                            window.alert("content error!");
+                        }
+
+                    }
+                    html_text+="</tr>";
+                }
+            }
+            html_text+="</tbody>"; 
+            html_text+="</table>";
+            html_text+="</body></html>"; 
+            
+        }
+        </script>
+    </head>
+    <body align="center">
+        <p><b>Enter URL for Airlines List JSON File</b></p>
+         <form name="myform" method="post" id="location">
+        <p><input type="text" name="HURL"></p>     
+        <p>
+        <input type="button" name="submit" value="Submit Query" onclick="searchXML(this.form)">
+        </p>
+        </form>
+        <noscript></noscript>
+    </body>
+</html>

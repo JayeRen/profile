@@ -1,0 +1,204 @@
+body{
+    background-color: black;
+    width: 1070px;
+    margin: 0 auto;
+    word-wrap : break-word;
+    font-family: sans-serif;
+}
+/*currently 2 button*/
+img{
+    padding: 0;
+    margin:0;
+    border: 0;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: underline;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: underline;
+}
+a button:hover{
+    background-color: RGB(210,65,55);
+}
+button{
+    border-radius: 5px;
+    
+    border: 1px solid RGB(218,0,30);
+    box-shadow: -2px -2px 3px gray;
+    
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    color:white;
+    background-color: RGB(218,0,30);
+    font-size: 20px;
+    cursor:pointer;
+}
+h1{
+    font-size: 60px;
+    line-height: 20px;
+}
+#ad{
+    font-size: 36px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+/*top bar*/
+div.top{
+    float: left;
+    background-color: white;
+    border-top: 6px solid RGB(0,63,116);
+    
+    padding-bottom: 5px;
+    
+    
+}
+/*left side logo*/
+.logo{
+    height: auto;
+    display: inline;
+    float: left;
+    width: 350px;
+    padding-top: 15px;
+    padding-left: 70px;
+    
+}
+/*right side*/
+.info{
+    height: auto;
+    display: inline;
+    float: right;
+    width: 650px;
+    color: RGB(0,130,220);
+    
+    padding-top: 10px;
+}
+#info-table{
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#info-txt{
+    font-size: 18px;
+    line-height: 1.5;
+    width:390px;
+    text-align: right;      
+}
+#info-btn{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #999;
+}
+/*container */
+div.container{
+    clear: both;
+    text-align: center;
+}
+div.ad{
+    background-color: RGB(0,63,116);
+    padding-top: 55px;
+    padding-bottom: 70px;
+    color: white;
+}
+#bbn{
+    display: inline;
+    vertical-align: top;
+    position: absolute;
+    padding-left: 280px;
+}
+div.content{
+    background-color: white;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 38px;
+    text-align: center;   
+    border-bottom: 12px solid RGB(0,109,185);
+}
+#p-why{
+    color:RGB(0,130,220);
+    font-size: 47.5px;
+    line-height: 1.1;
+    padding: 0;
+    border: 0;
+    margin: 0;  
+}
+table{
+    padding-top: 60px;
+    padding-left: 45px;
+}
+td.checkbox{
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: text-top;
+}
+td.txt{
+    text-align: left;
+    width:245px;
+    vertical-align: top;
+    padding-bottom: 35px;
+    padding-right: 20px;
+}
+        
+p.p1{
+    word-wrap: break-word;
+    font-size: 24.5px;
+    
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+p.p2{
+    word-wrap: break-word;
+    font-size: 18.5px;
+    font-weight: 100;
+    line-height: 1.5;
+    
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+div.bottom{
+    padding-left: 65px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+    background-color: RGB(0,63,116);
+    color:white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+separator{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: RGB(0,109,185);
+}
+hr{
+    border: 1px solid RGB(0,109,185);
+    width: 945px;
+    margin: 0;
+}
+
+#copyright{
+    font-size: 12px;
+}
+
+p.hw3-2{
+    height: 150;
+}
